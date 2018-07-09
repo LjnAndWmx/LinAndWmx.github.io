@@ -15,7 +15,7 @@ server.on('request',(req,res)=>{
         const urlString = req.url
         const urlObj = url.parse(urlString)
         let body = ''
-        // data事件，客户端传递几次数据它就会调用几次
+        // data事件，客户端传递几次数据它就会调用几次,每次请求过来自动加起来
         req.on('data',chunk=>{
             console.log(chunk)
             body+=chunk
@@ -27,7 +27,8 @@ server.on('request',(req,res)=>{
        
     }
    res.setHeader('Content-Type','application/json;chartset=utf-8')
-  res.end('result')
+//    不能响应对象，只能响应字符串
+   res.end('result')
 })
 
 server.listen(80,'127.0.0.1',err=>{

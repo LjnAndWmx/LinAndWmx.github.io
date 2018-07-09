@@ -1,0 +1,17 @@
+{
+  "name": "calc",
+  "version": "1.0.1",
+  "description": "创建包文件上传",
+  "main": "lib/test.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "王小熊"
+  ],
+  "author": "",
+  "license": "ISC"
+}

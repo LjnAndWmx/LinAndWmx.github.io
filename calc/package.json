@@ -1,13 +1,17 @@
 {
-  "name": "calc",
-  "version": "1.0.1",
-  "description": "创建包文件上传",
-  "main": "lib/test.js",
+  "name": "meixiongcalc",
+  "version": "1.0.0",
+  "description": "加减模块包",
+  "main": "lib/calc.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LjnAndWmx/LinAndWmx.github.io/tree/master/calc"
   },
   "keywords": [
     "王小熊"

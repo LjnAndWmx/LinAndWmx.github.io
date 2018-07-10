@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音乐播放列表</title>
+    <link rel="stylesheet" href="./statics/site.css">
+
+</head>
+<body>
+    <table>
+        <tr>
+            <th>序号</th>
+            <th>文件名称</th>
+            <th>操作</th>
+        </tr>
+        {{#each(musics)}}
+        <tr>
+            <td>{{xindex+1}}</td>
+            <td>{{this.name}}</td>
+            <td>
+                <a href="javascript:playMusic(this.name)">播放</a>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+    <audio id="audioId" src="" autoplay></audio>
+    <script src="./statics/jquery.min.js"></script>
+    <script>
+       
+  function playMusic(name){
+      const url = '/musics'+name
+      $('#audioId').attr('src',url)
+    }
+    </script>
+</body>
+</html>
